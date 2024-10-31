@@ -1,0 +1,25 @@
+{
+  "name": "controller_library",
+  "version": "0.0.1",
+  "description": "A website and webserver to display the history of controllers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel1060/Controller_Library.git"
+  },
+  "author": "The Curators",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel1060/Controller_Library/issues"
+  },
+  "homepage": "https://github.com/Daniel1060/Controller_Library#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0"
+  }
+}
