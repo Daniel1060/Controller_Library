@@ -61,6 +61,7 @@ const userInitializer = function(req, res, next){
     next();
 }
 
+// Gets current date time
 function getDateTime(){
     var currentdate = new Date(); 
     var datetime = currentdate.getDate() + "/"
@@ -75,7 +76,7 @@ function getDateTime(){
 app.use(userInitializer);
 
 connectDB();
-//this is our connection to the mongo db, ts sets the variable db as our database
+//this is our connection to the mongo db, this sets the variable db as our database
 async function connectDB() {
     // Use connect method to connect to the server
     await client.connect();
