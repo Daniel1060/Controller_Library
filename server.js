@@ -83,13 +83,7 @@ async function connectDB() {
     console.log('Connected successfully to server');
     db = client.db(dbname);
 
-    // // check if necessary collections exist
-    // checkCollections('profiles');
-    // checkCollections('characters');
-
-// app.set(){
-//     var session.loggedIn=false;
-//     var session.userData =
+    
 }
 
 // ****** Routes 
@@ -118,19 +112,6 @@ app.get('/admin', function(req, res){
     }
 });
 
-// These are created for future use if necessary
-
-// app.get('/create-account', function(req, res){
-//     res.render('pages/createaccount',{loggedIn: req.session.userData.loggedIn});
-// });
-
-// app.get('/profile',function(req,res){
-//     if(req.session.userData.loggedIn===true){
-//         res.render('pages/profile',{loggedIn: req.session.userData.loggedIn, userData:req.session.userData})
-//     }else{
-//         res.render('pages/login',{loggedIn: req.session.userData.loggedIn})
-//     }
-// });
 
 
 app.post('/create-new-account', function(req,res){
@@ -156,7 +137,7 @@ app.post('/create-new-account', function(req,res){
         
     // })console.log(email)
 
-        // TODO HASH PASSWORD
+        
         
         var newUserData = {
             "loggedIn":true,
